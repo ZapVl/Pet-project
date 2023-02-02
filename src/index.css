@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:focus { outline: 0; }
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* SearchPanel */
+.search__row {
+    margin-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    
+    
+}
+.search__value {
+  width: 100%;
+  font-size: 22px;
+  position: relative;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  background: linear-gradient(90deg, #ece89d, #ece89d) 0 30px/100% 8px repeat-x;
+  font-weight: 500;
+  
+}
+.search__btn{
+  border-bottom-right-radius: 45%;
+  position: relative;
+  box-shadow: 0 5px 0px #3c354a;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  background: linear-gradient(90deg, #ece89d, #ece89d) 0 30px/100% 8px repeat-x;
+  font-weight: 500;
+}
+.search__btn:hover{
+    top: 2px;
+    box-shadow: 0 3px 0px #3c354a;
+    text-shadow: 0 0.1px 0px #3c354a;
+}
+.search__value:focus{
+  top: 2px;
+  box-shadow: 0 0.1px 0px #3c354a;
+}
+
+
+
+
+
+
+
