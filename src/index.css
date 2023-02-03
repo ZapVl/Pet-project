@@ -9,7 +9,7 @@
 :focus { outline: 0; }
 
 .container{
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
 }

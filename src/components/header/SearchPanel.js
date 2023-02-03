@@ -1,10 +1,6 @@
 import React from 'react';
 
-const SearchPanel = (props) => {
-
-   
-  
-
+export const SearchPanel = (props) => {
   return (
     <>
         <div className='search'>
@@ -16,5 +12,3 @@ const SearchPanel = (props) => {
     </>
   );
 };
-
-export default SearchPanel;
