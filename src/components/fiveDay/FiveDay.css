@@ -1,0 +1,43 @@
+
+.five-row{
+
+    margin: 0 auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 25px;
+    margin-bottom: 20px;
+;
+}
+.five-card{
+    position: relative;
+    box-shadow: 10px 10px 10px rgb(170, 167, 167);
+    border: solid 0.5px  rgb(230, 230, 230);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 15px;
+
+}
+.five-card img{
+    max-width: 40%;
+    position: absolute;
+    top: 4px;
+    right: 0;
+}
+
+.five-date{
+    padding: 2px;
+    font-size: 12px;
+    border-bottom: solid 0.5px  rgb(230, 230, 230);
+}
+.five-temp{
+    font-size: 14px;
+    margin: 25px 0 10px 0;
+    text-align: center;
+}
+.five-description{
+    text-align: center;
+}
