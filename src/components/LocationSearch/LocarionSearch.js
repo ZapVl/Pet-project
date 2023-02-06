@@ -1,16 +1,17 @@
-import location from '../../assets/placeholder.png';
+import loc from '../../assets/placeholder.png';
+import React, {useState} from "react";
 
-export const LocationSearch = (props) => {
+export const LocationSearch = ({getWeather}) => {
 
     return (
         <div>
-        <button className='location-img'
+        <button className='location-img help'
       data-key='location'
-      onClick={(event) => props.getWeather(event) }
+      onClick={(event) => getWeather(event) }
     >
-      <img src={location} alt="#" />
+      <img src={loc} alt="#" />
     </button>
-  
+            <span className="airhelp">Weather in your city</span>
         </div>
     );
 }
