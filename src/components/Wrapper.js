@@ -9,6 +9,7 @@ import light_rain from '../assets/light rain.jpg'
 import scattered from '../assets/scattered clouds.jpg'
 import family from '../assets/family-rain.jpg'
 
+
 export default function Wrapper({state}) {
 
     let background;
@@ -41,7 +42,7 @@ export default function Wrapper({state}) {
         }else if (null) {
             background = light_rain
         }else{
-            background = family
+            background = overcast_clouds
         }
 
 
