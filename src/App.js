@@ -21,15 +21,16 @@ function App() {
         setLoading(false);
         setLocation(res.city);
       });
-      console.log(location);
+
   }
 
   async function getWeather(event) {
     event.preventDefault();
+    console.log(event)
     const city = event.target.dataset.key
       ? location
-      : event.target.elements.city.value;
-    console.log(event)
+      : event.target[0].value; // get the value from the entered text
+
     const ap_url = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${aPi_Kye}&units=metric`
     );
@@ -83,7 +84,10 @@ function App() {
     <div className="container">
       <SearchPanel onSearchDate={getWeather} state={state}  />
       {loading ? <h1>Loading...</h1> : <TodayTemp state={state} />}
-      <LocationSearch getWeather={getWeather}/>
+      <LocationSearch
+          getWeather={getWeather}
+          dataset={'city'}
+      />
 
     </div>
     </>

@@ -1,15 +1,17 @@
 import loc from '../../assets/placeholder.png';
 import React, {useState} from "react";
 
-export const LocationSearch = ({getWeather}) => {
+export const LocationSearch = ({getWeather, dataset}) => {
 
     return (
         <div>
         <button className='location-img help'
-      data-key='location'
-      onClick={(event) => getWeather(event) }
+
+      name='btn'
+      onClick={(event) => getWeather(event)
+        }
     >
-      <img src={loc} alt="#" />
+      <img src={loc} alt="#" data-key={dataset} />
     </button>
             <span className="airhelp">Weather in your city</span>
         </div>

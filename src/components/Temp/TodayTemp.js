@@ -10,6 +10,8 @@ export const TodayTemp = (props) => {
     } else {
         return (
             <>
+            <div className=
+                     'd-center'>
                 <div className='row-temp'>
 
                     <div className="temp">
@@ -27,7 +29,9 @@ export const TodayTemp = (props) => {
 
 
                 </div>
+            </div>
                 <FiveDay state={props.state} />
+
             </>
         )
     }

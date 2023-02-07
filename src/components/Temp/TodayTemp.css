@@ -1,6 +1,12 @@
+.d-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
 .row-temp{
     position: relative;
-    margin: 0 30%;
+    max-width: 50%;
     padding-bottom: 10px;
     justify-items: center;
     align-items: center;
@@ -38,6 +44,10 @@ h2{
     font-size: 28px;
     left: 0;
     letter-spacing: 1px;
+    text-align: center;
+    display: inline-flex;
+    justify-self: center;
+    align-self: center;
 }
 
 .info-list{
@@ -60,5 +70,28 @@ span{
 .temp-images img{
     max-width: 100%;
     object-fit: contain;
+}
+@media (max-width: 800px) {
+    .row-temp{
+        max-width: 60%;
+    }
+}
+@media (max-width: 700px) {
+    .row-temp{
+        min-width: 65%;
+    }
+    .five-card{
+        font-size: 8px;
+    }
+}
+@media (max-width: 560px) {
+    .row-temp{
+        min-width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .row-temp{
+        min-width: 90%;
+    }
 }
 
