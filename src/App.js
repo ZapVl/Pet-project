@@ -7,6 +7,7 @@ import {
 import SearchPanel from './components/header/SearchPanel';
 import Wrapper from './components/Wrapper';
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
+import Error from './components/Error/Error'
 function App() {
   getLocation();
   const aPi_Kye = "b145a9609df60ccb0b1cc2948bdc84ec";
@@ -14,7 +15,7 @@ function App() {
   const [state, setState] = useState([]);
   const [location, setLocation] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState(false);
 
   async function getLocation() {
     await fetch("https://api.db-ip.com/v2/free/self")
@@ -77,6 +78,7 @@ function App() {
                 dt_txt5: list[4].dt_txt,
             });
             setLoading(false)
+            setErrorMessage(false)
         }
     } catch (e) {
         setErrorMessage("Unable to fetch user list");
@@ -92,8 +94,15 @@ function App() {
     <Wrapper state={state} />
     <div className="container">
       <SearchPanel onSearchDate={getWeather} state={state}  loading={loading}/>
-      {loading ? <LoadingSpinner /> : <TodayTemp state={state} />}
-        {errorMessage && <div className="error" style={{color: "red"}}>{errorMessage}</div>}
+        {errorMessage
+            ? <Error/>
+            :
+            <>
+                {loading ? <LoadingSpinner /> : <TodayTemp state={state} />}
+            </>
+
+        }
+
       <LocationSearch
           getWeather={getWeather}
           dataset={'city'}
