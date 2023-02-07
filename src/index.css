@@ -228,11 +228,15 @@ input, textarea {
     /*}*/
     .search__row{
         grid-template-columns: 8fr 1fr 3fr;
-    }
+    }npm
     .location-img{
 
         margin: 13px 7px 0 0;
     }
+     .airhelp{
+         font-size: 8px;
+     }
+
 
 }
 
