@@ -12,7 +12,8 @@ export const LocationSearch = ({getWeather, dataset,loading}) => {
       onClick={(event) => getWeather(event)
         }
     >
-      <img src={loc} alt="#" data-key={dataset} />
+      <img src={loc} alt="#" data-key={dataset}  onTouchEnd={(event) => getWeather(event)
+      }/>
     </button>
             <span className="airhelp">Weather in your city</span>
         </div>

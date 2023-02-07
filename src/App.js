@@ -18,6 +18,7 @@ function App() {
   const [errorMessage, setErrorMessage] = useState(false);
 
   async function getLocation() {
+
     await fetch("https://api.db-ip.com/v2/free/self")
       .then((data) => data.json())
       .then((res) => {
