@@ -27,10 +27,10 @@ function FiveDay(props) {
                     <div className="five-description">{props.state.description3}</div>
                 </div>
                 <div className="five-card">
-                    <div className="five-date">{props.state.dt_txt3}</div>
-                    <img src={`https://openweathermap.org/img/wn/${props.state.icon3}@2x.png`} alt='#'/>
-                    <div className="five-temp">{props.state.temp_max3}&#176; C / {props.state.temp_min3}&#176; C</div>
-                    <div className="five-description">{props.state.description3}</div>
+                    <div className="five-date">{props.state.dt_txt4}</div>
+                    <img src={`https://openweathermap.org/img/wn/${props.state.icon4}@2x.png`} alt='#'/>
+                    <div className="five-temp">{props.state.temp_max3}&#176; C / {props.state.temp_min4}&#176; C</div>
+                    <div className="five-description">{props.state.description4}</div>
                 </div>
                 <div className="five-card">
                     <div className="five-date">{props.state.dt_txt5}</div>
