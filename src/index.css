@@ -132,10 +132,10 @@ input, textarea {
 .airhelp{
     position: absolute;
     border-radius: var(--border-radius);
-    border-end-end-radius: 0px;
+    border-start-end-radius: 0px;
     padding: 5px;
     color: var(--color-white);
-    top: -7px;
+    top: 35px;
     left: 70%;
     background: #006893;
     animation-duration: 4s;
@@ -213,7 +213,8 @@ input, textarea {
 }
 @media (max-width: 678px) {
     .airhelp{
-        left: 57%;
+        left: 80%;
+
     }
     .wrapper img{
         height: 121%;
@@ -242,7 +243,8 @@ input, textarea {
     }
      .airhelp{
          font-size: 8px;
-         left: 63%;
+         left: 57%;
+         top: 50px;
      }
 
 
