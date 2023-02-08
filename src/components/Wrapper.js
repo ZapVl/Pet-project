@@ -42,7 +42,7 @@ export default function Wrapper({state}) {
         }else if (null) {
             background = light_rain
         }else{
-            background = overcast_clouds
+            background = broken_clouds
         }
 
 
